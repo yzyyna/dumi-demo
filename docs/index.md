@@ -1,21 +1,23 @@
 ---
 hero:
-  title: library
+  title: dumi
   description: A react library developed with dumi
+  # keywords: ["dumi-demo", "demo", "dumi", "umijs"]
+  keywords: [dumi-demo, demo, umijs]
   actions:
-    - text: Hello
-      link: /
-    - text: World
-      link: /
+    - text: go
+      link: /guide
+    - text: Github
+      link: https://github.com/yzyyna/dumi-demo
 features:
   - title: Hello
-    emoji: 💎
+    emoji: 👨🏻‍💻
     description: Put hello description here
   - title: World
-    emoji: 🌈
+    emoji: 🔨
     description: Put world description here
-  - title: '!'
-    emoji: 🚀
+  - title: "!"
+    emoji: 👌
     description: Put ! description here
 ---
 

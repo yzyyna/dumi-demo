@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'development') {
 import React from 'react';
 
 export async function getRoutes() {
-  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"docs/guide":{"path":"guide","id":"docs/guide","parentId":"DocLayout"},"docs/index":{"path":"","id":"docs/index","parentId":"DocLayout"},"components/Foo/index":{"id":"components/Foo/index","path":"components/foo","parentId":"DocLayout"},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout","prerender":false}} as const;
+  const routes = {"404":{"id":"404","path":"*","parentId":"DocLayout"},"dumi-context-layout":{"id":"dumi-context-layout","path":"/","isLayout":true},"DocLayout":{"id":"DocLayout","path":"/","parentId":"dumi-context-layout","isLayout":true},"docs/guide":{"path":"guide","id":"docs/guide","parentId":"DocLayout"},"docs/hello":{"path":"hello","id":"docs/hello","parentId":"DocLayout"},"docs/hello/world/dumi":{"path":"hello/world/dumi","id":"docs/hello/world/dumi","parentId":"DocLayout"},"docs/index":{"path":"","id":"docs/index","parentId":"DocLayout"},"components/Boo/index":{"id":"components/Boo/index","path":"components/boo","parentId":"DocLayout"},"components/Foo/index":{"id":"components/Foo/index","path":"components/foo","parentId":"DocLayout"},"demo-render":{"id":"demo-render","path":"~demos/:id","parentId":"dumi-context-layout","prerender":false}} as const;
   return {
     routes,
     routeComponents: {
@@ -27,7 +27,10 @@ export async function getRoutes() {
 'dumi-context-layout': React.lazy(() => import(/* webpackChunkName: "dumi__tmp__dumi__theme__ContextWrapper" */'/Users/mac/Projects/GitHub/dumi-demo/.dumi/tmp/dumi/theme/ContextWrapper.tsx')),
 'DocLayout': React.lazy(() => import(/* webpackChunkName: "nm__dumi__theme-default__layouts__DocLayout__index" */'/Users/mac/Projects/GitHub/dumi-demo/node_modules/dumi/theme-default/layouts/DocLayout/index.js')),
 'docs/guide': React.lazy(() => import(/* webpackChunkName: "docs__guide.md" */'/Users/mac/Projects/GitHub/dumi-demo/docs/guide.md')),
+'docs/hello': React.lazy(() => import(/* webpackChunkName: "docs__hello.md" */'/Users/mac/Projects/GitHub/dumi-demo/docs/hello.md')),
+'docs/hello/world/dumi': React.lazy(() => import(/* webpackChunkName: "docs__hello__world__dumi.md" */'/Users/mac/Projects/GitHub/dumi-demo/docs/hello/world/dumi.md')),
 'docs/index': React.lazy(() => import(/* webpackChunkName: "docs__index.md" */'/Users/mac/Projects/GitHub/dumi-demo/docs/index.md')),
+'components/Boo/index': React.lazy(() => import(/* webpackChunkName: "Boo__index.md" */'/Users/mac/Projects/GitHub/dumi-demo/src/Boo/index.md')),
 'components/Foo/index': React.lazy(() => import(/* webpackChunkName: "Foo__index.md" */'/Users/mac/Projects/GitHub/dumi-demo/src/Foo/index.md')),
 'demo-render': React.lazy(() => import(/* webpackChunkName: "nm__dumi__dist__client__pages__Demo__index" */'/Users/mac/Projects/GitHub/dumi-demo/node_modules/dumi/dist/client/pages/Demo/index.js')),
 },
