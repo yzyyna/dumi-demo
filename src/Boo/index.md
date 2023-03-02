@@ -9,7 +9,16 @@ keywords: [关键词] # 配置页面关键词，同时用于生成 <meta> 标签
 This is an Boo component.
 
 ```jsx
-import { Foo } from "dumi-demo";
+import { Foo, Test } from "dumi-demo";
 
-export default () => <Foo title="Hello dumi!" />;
+export default () => (
+  <div>
+    <div className="foo-container">
+      <Foo title="Hello dumi!" />
+    </div>
+    <div className="test-container">
+      <Test number="23" />
+    </div>
+  </div>
+);
 ```
